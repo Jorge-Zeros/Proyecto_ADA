@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Proyecto_ADA</RootNamespace>
     <AssemblyName>Proyecto_ADA</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,19 +48,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlgoritmosOrdenaciónControl.cs">
+    <Compile Include="AlgoritmosOrdenacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlgoritmosOrdenaciónControl.Designer.cs">
-      <DependentUpon>AlgoritmosOrdenaciónControl.cs</DependentUpon>
+    <Compile Include="AlgoritmosOrdenacion.Designer.cs">
+      <DependentUpon>AlgoritmosOrdenacion.cs</DependentUpon>
     </Compile>
     <Compile Include="BubbleSortClass.cs" />
+    <Compile Include="cOrdenamiento.cs" />
     <Compile Include="HeapSortClass.cs" />
     <Compile Include="MergeSortClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AlgoritmosOrdenaciónControl.resx">
-      <DependentUpon>AlgoritmosOrdenaciónControl.cs</DependentUpon>
+    <EmbeddedResource Include="AlgoritmosOrdenacion.resx">
+      <DependentUpon>AlgoritmosOrdenacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
