@@ -46,14 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AlgoritmosOrdenaciónControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AlgoritmosOrdenaciónControl.Designer.cs">
+      <DependentUpon>AlgoritmosOrdenaciónControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="BubbleSortClass.cs" />
+    <Compile Include="HeapSortClass.cs" />
+    <Compile Include="MergeSortClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlgoritmosOrdenaciónControl.resx">
+      <DependentUpon>AlgoritmosOrdenaciónControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

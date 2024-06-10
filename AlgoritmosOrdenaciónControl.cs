@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_ADA
 {
-    public partial class Form1 : Form
+    public partial class AlgoritmosOrdenaciónControl : Form
     {
-        public Form1()
+        public AlgoritmosOrdenaciónControl()
         {
             InitializeComponent();
         }

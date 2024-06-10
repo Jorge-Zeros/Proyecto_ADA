@@ -16,7 +16,11 @@ namespace Proyecto_ADA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new AlgoritmosOrdenaciónControl());
+            int[] A = new int[] { 0, 4, 10, 3, 5, 1 };
+            BubbleSortClass.Ordenar(A);
+            MergeSortClass.Ordenar(A);
+            HeapSortClass.Ordenar(A);
         }
     }
 }
